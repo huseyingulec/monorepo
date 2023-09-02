@@ -30,6 +30,7 @@ type Query {
   user(id: ID, username: String): User
   sozluk: SozlukQuery!
   pano: PanoQuery!
+  rafine: RafineQuery!
 }
 
 type PageInfo {
@@ -283,4 +284,16 @@ input RemovePanoUpvoteInput {
 type RemovePanoUpvotePayload {
   node: PanoUpvote
   error: PanoUpvoteError
+}
+
+### Rafine
+
+type RafineQuery {
+  metadata(input: String!): RafineMetadataResult
+}
+
+type RafineMetadataResult {
+  title: String!
+  description: String!
+  url: String!
 }
