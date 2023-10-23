@@ -25,6 +25,6 @@ export const transformMetadata = (metadata: Metadata) => {
     description: metadata.meta.description || "",
     title: metadata.meta.title || "",
     url: metadata.meta.url || "",
-    __typename: "RafineMetadataResult",
-  } satisfies RafineMetadataResult;
+    __typename: "RafineMetadata",
+  } satisfies RafineMetadata;
 };
