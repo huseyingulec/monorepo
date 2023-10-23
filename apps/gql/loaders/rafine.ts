@@ -1,7 +1,7 @@
 import { Metadata, parser } from "html-metadata-parser";
 
 import { createDataLoader } from "~/../../packages/gql-utils";
-import { RafineMetadataResult } from "~/schema/types.generated";
+import { RafineMetadata } from "~/schema/types.generated";
 
 export const createRafineLoaders = () => {
   return {
